@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN DO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Cdn do bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- link do wow.js -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- nosso css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link do fonte awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- link do script -->
+    <script src="js/script.js" defer></script>
+    <!-- link do scroollrevel -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://ava.egp.ce.gov.br/2018/desv/logo/favicon.png" />
+
+    <title>EGPCE | Gestão do Tempo - Módulo 03</title>
+</head>
+
+<body>
+    <!-- header  -->
+    <!-- coloquei um id pra chamar la no js --jayron-- -->
+    <!-- parte do header -->
+    <header id="navbar">
+
+        <nav class="navbar" id="navmenu">
+            <div class="container-fluid">
+
+                <!-- começo feito em bootstrap -->
+                <button class="btn" id="btn_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars fs-2"></i></button>
+
+                <div class="offcanvas offcanvas-start w-50" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title p-3" id="offcanvasScrollingLabel"><img src="imgs/logoEGP2.png"
+                                alt="logo" id="img_logo">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- fim do bootstrap -->
+
+                        <nav class="menulateral-responsivo">
+                            <ul>
+                                <li class="menu">
+                                    <a href="index.html">
+                                        <span class="icon space"><i class="bi bi-person-workspace"></i></span>
+                                        <span class="txt">Apresentação</span>
+                                    </a>
+                                </li>
+                                <li class="menu">
+                                    <a href="modulo01.html">
+                                        <span class="icon"><i class="bi bi-1-circle"></i>
+                                        </span>
+                                        <span class="txt">Módulo 01</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu">
+                                    <a href="modulo02.html">
+                                        <span class="icon"><i class="bi bi-2-circle"></i></span>
+                                        <span class="txt">Módulo 02</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu">
+                                    <a href="modulo03.html">
+                                        <span class="icon"><i class="bi bi-3-circle"></i></span>
+                                        <span class="txt">Módulo 03</span>
+                                    </a>
+                                </li>
+                                <li class="menu">
+                                    <a href="referencias.html">
+                                        <span class="icon"><i class="bi bi-book-half"></i></span>
+                                        <span class="txt">Referências</span>
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <a class="navbar-brand"></a>
+                <form class="d-flex align-items-center" role="search">
+                    <a class="nav-link active nonedec me-3" aria-current="page" href="#">Nome_Completo</a>
+                    <button type="button" class="btn btn-outline-success">Ir para o Moodle</button>
+
+                    <!--BOTÃO MODO ESCURO (JAMILLE)-->
+                    <div id="btn_tema">
+                        <i class="fa-solid fa-sun" style="color: #ffffff;"></i>
+                        <div id="txtBtn"> Mudar Tema</div>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- menu lateral começa aqui -->
+    <nav class="menulateral">
+        <div class="btn-expandir">
+            <img src="imgs/logoEGP2.png" alt="logo" id="logo">
+        </div>
+        <ul>
+            <li class="menu">
+                <a href="index.html">
+                    <span class="icon space"><i class="bi bi-person-workspace"></i></span>
+                    <span class="txt">Apresentação</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="modulo01.html">
+                    <span class="icon"><i class="bi bi-1-circle"></i>
+                    </span>
+                    <span class="txt">Módulo 01</span>
+                </a>
+            </li>
+
+            <li class="menu">
+                <a href="modulo02.html">
+                    <span class="icon"><i class="bi bi-2-circle"></i></span>
+                    <span class="txt">Módulo 02</span>
+                </a>
+            </li>
+
+            <li class="menu">
+                <a href="modulo03.html">
+                    <span class="icon"><i class="bi bi-3-circle"></i></span>
+                    <span class="txt">Módulo 03</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="referencias.html">
+                    <span class="icon"><i class="bi bi-book-half"></i></span>
+                    <span class="txt">Referências</span>
+                </a>
+            </li>
+
+
+
+        </ul>
+    </nav>
+    <!--  fim do código do menu lateral-->
+
+    <!-- CONTEUDO INICIO -->
+    <section>
+        <div class="main-content container-fluid Texto">
+            <div class="row">
+                <!-- Begin row -->
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+
+                    <h2 class="Titulo fw-bolder">Planejamento de Metas</h2>
+                    <!-- tirei o hr por que o menu não estava ficando sobreposto -->
+                    <!-- <hr> -->
+                    <div class="text-center img-03">
+                        <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 3:</strong>
+                            Representação da direção</p>
+                            <div class="zoom">
+                        <a href="imagens/Figura03.png" data-bs-toggle="modal" data-bs-target="#Imagem03">
+                            <img src="imgs/Figura03modulo03.png" alt="Imagem que representa um alvo" id="img-3">
+                        </a>
+                            </div>
+                        <p class="FonteFigura FonteMenor text-secondary "><strong>Fonte:</strong> banco de imagens
+                            gratuitas do canvas, 2021</p>
+                    </div>
+
+                    <!-- Imagem 03 - MODAL (Audi)-->
+                    <div class="modal fade text-center" id="Imagem03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img class="img-fluid" src="imgs/Figura03modulo03.png" alt="Alt da imagem fica aqui">
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <p class="FonteFigura FonteMenor text-secondary"><strong>Figura 3:</strong> Representação da direção</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagem 03 - End (Audi)--> <br>
+
+
+
+                    <p class="scrool">
+                        Agora que você tem uma visão de si mesmo o seu cérebro irá planejar todas as ações necessárias
+                        para alinhar esse sentimento com a realidade . Todo este trabalho se inicia por uma pergunta
+                        muito simples: o que se requer para que minha mente consciente e inconsciente realizem as ações
+                        necessárias para que tudo isso que eu idealizei se realize? Esta pergunta também pode ser
+                        traduzida como: quem eu preciso ser para tornar-se esta pessoa que eu visualizei? E ainda,
+                        mantendo minha vida e rotina como está hoje irei alcançar essa meta futura?
+
+
+                    </p>
+
+
+                    <!-- CITAÇÃO -->
+                    <div class="bd-callout bd-callout-success m-3">
+
+                        <!-- blockquote do bootstrap -->
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p> A partir de tais questionamentos adentramos no campo da auto responsabilidade,
+                                    planejamento e metas. O planejamento é bastante simples, ele começa com a decisão de
+                                    datar a carta escrita de seu futuro. Em quanto tempo você espera que o que foi
+                                    escrito possa se realizar? Provavelmente, as diferentes partes da sua visualização
+                                    serão realizadas em tempos diferentes, e terão prioridades diferentes.</p>
+                            </blockquote>
+
+                        </figure>
+                    </div>
+
+                    <!--Movimento-->
+                    <!-- aqui teria uma transição com  wow.js (o texto vem do lado direto) -->
+                    <div>
+                        <ul class="none mt-3">
+                            <li class="img-fluid">
+                                <p>
+                                    Vida profissional e vida pessoal se implicam mutuamente, então perceba que essa
+                                    divisão é apenas didática.
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div><br>
+
+                    <!-- accordion do davi -->
+                    <!-- reflita -->
+                    <section class="container">
+                        <div class="accordion ">
+
+                            <section id="content">
+                                <section id="content">
+                                    <a href="#" id="tituloreflita">
+                                        <div class="div_teste">
+                                            <div> <i class="fa-solid fa-head-side-virus fa-xl me-2"></i>Reflita</div>
+                                            <i class="fa-regular fa-hand-pointer fa-beat"></i>
+                                        </div>
+                                    </a> <!--caixa Principal-->
+
+                                    <div class="accordion-content" id="reflita">
+                                        <!--caixa secundaria com um class universal accordion-content e um id unico reflita-->
+                                        <p class="Reflita">No meu exemplo anterior, a visualização em relação à vida
+                                            profissional estava conectada a realização de palestras e publicação de
+                                            livros. Neste caso, minha pergunta pessoal seria: partindo da minha situação
+                                            atual o que se requer e quanto tempo é necessário para que eu possa ter os
+                                            meus livros publicados e a partir dessas publicações ser convidada para
+                                            palestrar em diversas partes do mundo?</p>
+                                    </div>
+                                </section>
+
+
+                        </div>
+                    </section> <br>
+
+
+                    <p class="scrool">
+                        Já no caso da minha visualização da vida pessoal ela está conectada a um bom relacionamento
+                        familiar, amigos e com uma vida repleta de viagens. Existe, portanto, uma conexão possível entre
+                        as viagens de trabalho e as viagens a passeio, mas existe também um plano de vida familiar e,
+                        para muitas pessoas, o plano de constituir uma família e de construir uma carreira bem-sucedida
+                        podem tornar-se conflitantes. Este é um ponto bastante importante de ser salientado, porque os
+                        conflitos na mente levam a muitas pausas ou a estagnação total.
+
+
+                    </p><br>
+
+                    <!-- accordion do davi -->
+                    <!-- fique atento -->
+                    <section class="container">
+                        <div class="accordion ">
+
+                            <section id="content">
+                                <a href="#" id="titulofiqueatento">
+                                    <div class="div_teste">
+                                        <div><i class="fa-solid fa-person-circle-exclamation"></i> FIQUE ATENTO </div>
+
+                                        <i class="fa-regular fa-hand-pointer fa-beat"></i>
+                                    </div>
+
+                                </a> <!--caixa Principal-->
+                                <div class="accordion-content" id="fiqueatento"><!--caixa secundaria-->
+                                    <p class="FiqueAtentoTexto">A mente não precisa ter um único foco, mas se você tem
+                                        mais de um foco, eles precisam estar alinhados e não serem conflitantes. Você
+                                        pode ter uma carreira de sucesso e uma vida familiar, mas se no seu inconsciente
+                                        estas coisas são excludentes você estará permanentemente em um dilema. Além do
+                                        mais, ter mais de um foco implica dividir o seu tempo para dar atenção a tudo
+                                        que você interpretar como sendo o foco da sua vida. Se você definir, como foi o
+                                        meu caso, ter mais de um foco, você não poderá alocar todo o seu tempo e atenção
+                                        em apenas um deles, pois, neste caso, os outros provavelmente não se realizarão
+                                        e se tornarão motivo de culpa.</p>
+                                </div>
+                            </section>
+                    </section>
+                    <hr>
+
+                    <p class="scrool">
+                        Outro ponto importante que eu acabei de mencionar, é que você sempre vai partir de uma situação
+                        presente . Ao analisar sua situação atual você pode sentir culpa por tudo aquilo que ainda não
+                        foi realizado ou simplesmente honrar todas as suas experiências e reconhecer todos os esforços
+                        realizados até então. Para lhe ajudar a escolher entre essas direções eu gostaria de lhe trazer
+                        à consciência um fato muitas vezes ignorado na culpa: ninguém jamais está tentando fazer o seu
+                        pior
+                    </p>
+                    <br>
+
+                    <p class="scrool">
+                        Até mesmo uma pessoa má, está tentando fazer a sua melhor maldade. Obviamente não estou fazendo
+                        qualquer apologia ao mal, apenas estou ressaltando que a mediocridade nunca é meta para o ser
+                        humano.
+                    </p>
+                    <br>
+
+                    <!-- accordion do davi -->
+                    <!-- fique atento -->
+                    <section class="container">
+                        <div class="accordion ">
+
+                            <section id="content">
+                                <a href="#" id="titulofiqueatento">
+                                    <div class="div_teste">
+                                        <div><i class="fa-solid fa-person-circle-exclamation"></i> FIQUE ATENTO </div>
+
+                                        <i class="fa-regular fa-hand-pointer fa-beat"></i>
+                                    </div>
+
+                                </a> <!--caixa Principal-->
+                                <div class="accordion-content" id="fiqueatento"><!--caixa secundaria-->
+                                    <p class="FiqueAtentoTexto">
+                                        Você sempre fez o seu melhor. Pode ser que hoje olhando para o passado você
+                                        perceba que o seu melhor não foi tão bom assim, mas com certeza foi o melhor que
+                                        você pôde fazer naquele momento e com a consciência que você tinha. Hoje, você
+                                        também está fazendo o seu melhor ao estar neste curso e é essa nova consciência
+                                        que pode atualizar seu nível de elaboração.
+                                    </p>
+                                </div>
+                            </section>
+                    </section>
+                    <hr>
+
+                    <p class="scrool">
+                        Retornando ao ponto de planejamento futuro, talvez você possa perceber que, na situação
+                        presente, você está em níveis de realizações diferentes, para cada um dos focos. Por exemplo, eu
+                        tenho consciência que a minha vida profissional já está mais bem estabelecida que a minha vida
+                        pessoal. Também sou consciente de que essa discrepância ocorreu devido ao fato de que eu
+                        depositei minha atenção e tempo para a vida profissional e agora estou reequilibrando estes
+                        processos. Justamente para que estas duas dimensões da vida se tornem equilibradas eu tenho dado
+                        mais atenção e foco à vida pessoal e familiar e um pouco menos à vida profissional de modo que
+                        dentro de um determinado período essas dimensões torna-se completamente equilibradas.
+
+
+                    </p>
+
+                    <p class="scrool">
+                        Em relação à questão temporal, você pode dividir seus objetivos em curto, médio e longo prazo. O
+                        curto prazo geralmente é atribuído às atividades que já são correntes no seu momento presente ou
+                        em até no máximo um ano. Está relacionado à execução de tarefas. O médio prazo se conecta com a
+                        criação de novas oportunidades e que pouco a pouco podem se tornar a sua nova rotina. Já o longo
+                        prazo, não está necessariamente relacionado com algo que está muito distante do tempo presente,
+                        mas principalmente a algo que você deseja realizar ou continuar realizando ao longo da vida,
+                        como por exemplo, seu legado, casamento, filhos, compra de uma casa. Para que você exercite na
+                        prática esse planejamento, deixo abaixo alguns exemplos a serem preenchidos:
+
+
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+
+                            <p>Vida Profissional:</p>
+
+                            <table class="table table-bordered border-success ">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Objetivo:</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Quando: [ ] curto prazo [ ] médio prazo [ x ] longo prazo</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">legado</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12">
+                            <p>Vida Profissional:</p>
+
+                            <table class="table table-bordered border-success">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Objetivo:</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Quando: [ ] curto prazo [x ] médio prazo [ ] longo prazo</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">legado</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Importante -->
+                    <!-- accordion do davi -->
+                    <section class="container">
+                        <div class="accordion">
+
+                            <section id="content">
+                                <a href="#" id="tituloimportante">
+                                    <div class="div_teste">
+                                        <div><i class="fa-solid fa-exclamation"></i> IMPORTANTE </div>
+
+                                        <i class="fa-regular fa-hand-pointer fa-beat"></i>
+                                    </div>
+                                </a> <!--caixa Principal-->
+                                <div class="accordion-content" id="importante"><!--caixa secundaria-->
+                                    <p>
+                                        O que determina a direção da sua mente, se ela irá trabalhar para realizar o que
+                                        está escrito na carta ou mantê-lo na estagnação são as emoções envolvidas. Se
+                                        você não sentir bem estar e verdade ao escrever a carta seu fracasso será
+                                        iminente. Eu aconselho que você releia várias vezes e busque visualizar na sua
+                                        mente tudo que foi escrito com o sentimento de orgulho e realização. Esse
+                                        sentimento será buscado pelo seu cérebro como uma droga.
+                                    </p>
+
+                                </div>
+                            </section>
+
+                        </div>
+                    </section>
+                    <hr>
+                    <p class="scrool">
+                        Perceba que para a vida profissional foram criados diferentes espaços para legado e
+                        providências. Esta ordem corresponde ao que mencionei acima sobre ter uma visão de vida e
+                        adaptar as nossas metas para se alinharem com essa versão. Se em sua carta você já imaginou um
+                        legado futuro você pode simplesmente transferir para este espaço. Caso contrário, comece a
+                        perceber qual é o legado profissional que você deseja entregar. Uma outra palavra para legado
+                        seria contribuição, então qual a contribuição você deseja deixar para a sociedade?
+                    </p>
+
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-9">
+                            <p>Vida pessoal:</p>
+
+                            <table class="table table-bordered border-success ms-4">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">Objetivo:</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Quando: [ ] curto prazo [ x ] longo prazo</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Visão</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+
+                    <p class="scrool">
+                        Para a vida pessoal, por hora, deixei apenas espaço para o longo prazo, que é aquela visão de
+                        vida que você visualizou antes. Você pode pensar em onde deseja morar, quem são as pessoas com
+                        quem deseja compartilhar momentos de lazer e se pretende manter ou estabelecer laços duradouros
+                        como família e casamento. Evitei o espaço do médio prazo porque muitas vezes as realizações
+                        pessoais não dependem apenas de nós, mas também da vontade pessoal de outras pessoas.
+
+
+                    </p>
+
+                    <!-- accordion do davi -->
+                    <!-- fique atento -->
+                    <section class="container">
+                        <div class="accordion ">
+
+                            <section id="content">
+                                <a href="#" id="titulofiqueatento">
+                                    <div class="div_teste">
+                                        <div><i class="fa-solid fa-person-circle-exclamation"></i> FIQUE ATENTO </div>
+
+                                        <i class="fa-regular fa-hand-pointer fa-beat"></i>
+                                    </div>
+
+                                </a> <!--caixa Principal-->
+                                <div class="accordion-content" id="fiqueatento"><!--caixa secundaria-->
+                                    <p class="FiqueAtentoTexto">
+                                        Na segunda parte deste curso, falarei sobre os hábitos necessários para realizar
+                                        e manter o planejamento de médio e longo prazo. Você perceberá que apesar de sua
+                                        visão de futuro, o resultado de sua vida é determinado pelos seus hábitos
+                                        diários.
+                                    </p>
+                                </div>
+                            </section>
+                    </section>
+                    <hr>
+
+                    <!-- accordion do davi -->
+                    <!-- fique atento -->
+                    <section class="container">
+                        <div class="accordion ">
+
+                            <section id="content">
+                                <a href="#" id="tituloSaibaMais">
+                                    <div class="div_teste">
+                                        <div><i class="fa-solid fa-plus"></i> SAIBA MAIS </div>
+
+                                        <i class="fa-regular fa-hand-pointer fa-beat"></i>
+                                    </div>
+
+                                </a> <!--caixa Principal-->
+                                <div class="accordion-content" id="saibamais"><!--caixa secundaria-->
+                                    <p class="FiqueAtentoTexto">
+                                        Na segunda parte deste curso, falarei sobre os hábitos necessários para realizar
+                                        e manter o planejamento de médio e longo prazo. Você perceberá que apesar de sua
+                                        visão de futuro, o resultado de sua vida é determinado pelos seus hábitos
+                                        diários.
+                                    </p>
+                                </div>
+                            </section>
+                    </section>
+                    <hr>
+
+                </div>
+
+            </div>
+    </section>
+    <!-- Botões de navegação -->
+    <div class="text-center">
+        <a href="modulo02.html" class="btn btn-outline-success" role="button" aria-pressed="true"> <i
+                class="fa-solid fa-chevron-left"></i> Voltar </a>
+        <a href="referencias.html" class="btn btn-outline-success" role="button" aria-pressed="true">Próximo <i
+                class="fa-solid fa-chevron-right"></i></a>
+    </div>
+
+    <footer>
+        <hr>
+        <div class="text-center">
+            <p class="text">2023 EGPCE | Escola de Gestão Pública do Estado do Ceará</p>
+            <img class="img-fluid" style="max-width: 200px;"
+                src="https://www.egp.ce.gov.br/wp-content/uploads/sites/8/2021/06/seplag-cinza.png" alt="Logo Seplag">
+        </div>
+    </footer>
+    <br>
+
+    <div id="progress-bar"></div>
+
+</body>
+
+</html>

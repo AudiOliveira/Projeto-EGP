@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN DO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Cdn do bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- link do wow.js -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- nosso css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link do fonte awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- link do script -->
+    <script src="js/script.js" defer></script>
+    <!-- link do scroollrevel -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://ava.egp.ce.gov.br/2018/desv/logo/favicon.png" />
+
+    <title>EGPCE | Gestão do Tempo - Módulo 01</title>
+</head>
+
+<body>
+    <!-- header  -->
+    <!-- coloquei um id pra chamar la no js --jayron-- -->
+    <!-- parte do header -->
+    <header id="navbar">
+
+        <nav class="navbar" id="navmenu">
+            <div class="container-fluid">
+
+                <!-- começo feito em bootstrap -->
+                <button class="btn" id="btn_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars fs-2"></i></button>
+
+                <div class="offcanvas offcanvas-start w-50" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title p-3" id="offcanvasScrollingLabel"><img src="imgs/logoEGP2.png"
+                                alt="logo" id="img_logo">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- fim do bootstrap -->
+
+                        <nav class="menulateral-responsivo">
+                            <ul>
+                                <li class="menu">
+                                    <a href="index.html">
+                                        <span class="icon space"><i class="bi bi-person-workspace"></i></span>
+                                        <span class="txt">Apresentação</span>
+                                    </a>
+                                </li>
+                                <li class="menu">
+                                    <a href="modulo01.html">
+                                        <span class="icon"><i class="bi bi-1-circle"></i>
+                                        </span>
+                                        <span class="txt">Módulo 01</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu">
+                                    <a href="modulo02.html">
+                                        <span class="icon"><i class="bi bi-2-circle"></i></span>
+                                        <span class="txt">Módulo 02</span>
+                                    </a>
+                                </li>
+
+                                <li class="menu">
+                                    <a href="modulo03.html">
+                                        <span class="icon"><i class="bi bi-3-circle"></i></span>
+                                        <span class="txt">Módulo 03</span>
+                                    </a>
+                                </li>
+                                <li class="menu">
+                                    <a href="referencias.html">
+                                        <span class="icon"><i class="bi bi-book-half"></i></span>
+                                        <span class="txt">Referências</span>
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <a class="navbar-brand"></a>
+                <form class="form" role="search">
+                    <a class="nav-link active nonedec me-3" aria-current="page" href="#">Nome_Completo</a>
+                    <button type="button" class="btn btn-outline-success">Ir para o Moodle</button>
+
+
+                    <!--BOTÃO MODO ESCURO (JAMILLE)-->
+                    <div id="btn_tema">
+                        <i class="fa-solid fa-sun" style="color: #ffffff;"></i>
+                        <div id="txtBtn"> Mudar Tema</div>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- menu lateral começa aqui -->
+    <nav class="menulateral">
+        <div class="btn-expandir">
+            <img src="imgs/logoEGP2.png" alt="logo" id="logo">
+        </div>
+        <ul>
+            <li class="menu">
+                <a href="index.html">
+                    <span class="icon space"><i class="bi bi-person-workspace"></i></span>
+                    <span class="txt">Apresentação</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="modulo01.html">
+                    <span class="icon"><i class="bi bi-1-circle"></i>
+                    </span>
+                    <span class="txt">Modulo 01</span>
+                </a>
+            </li>
+
+            <li class="menu">
+                <a href="modulo02.html">
+                    <span class="icon"><i class="bi bi-2-circle"></i></span>
+                    <span class="txt">Modulo 02</span>
+                </a>
+            </li>
+
+            <li class="menu">
+                <a href="modulo03.html">
+                    <span class="icon"><i class="bi bi-3-circle"></i></span>
+                    <span class="txt">Modulo 03</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="referencias.html">
+                    <span class="icon"><i class="bi bi-book-half"></i></span>
+                    <span class="txt">Referências</span>
+                </a>
+            </li>
+
+
+
+        </ul>
+    </nav>
+    <!--  fim do código do menu lateral-->
+
+    <!-- CONTEUDO INICIO -->
+    <section>
+        <div class="main-content container-fluid Texto">
+            <div class="row">
+                <!-- Begin row -->
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+
+                    <div class="page-title">
+
+                        <h2 class="Titulo">REFERÊNCIAS</h2>
+
+                        <br>
+
+                        <p class="Texto">ALLEN, Steve. <strong>strong Aprenda como Einstein.</strong> 2017.
+
+                        <p class="Texto">JONES, Ryan. <strong>Produtividade para Procrastinadores.</strong> Editora
+                            Amazon, 2020.</p>
+
+                        <p class="Texto">LAWRENCE, Steven. <strong>O poder da execução de metas.</strong> 2019.</p>
+
+                        <p class="Texto">MOURA, Jaqueline. <strong>O poder do Não.</strong> Editora Ristretto, 2021.
+                        </p>
+
+                        <p class="Texto"> RIBEIRO, Haroldo. <strong> A Bíblia do 5S, da implantação à excelência:
+                                conheça a metodologia que levou empresas no Brasil a serem benchmarking mundiais em
+                                5S.</strong> Casa da Qualidade, 2006.</p>
+                        <br><br>
+
+                        <div class="border border-success m-4 p-4 text-rounded rounded rounded-lg">
+                            <h5 id="txt_referencias">Pronto, <strong>Nome_completo</strong> agora você já pode fazer a avaliação do curso
+                                <strong>Gestão do Tempo</strong> Módulo 01 abaixo, Boa Sorte!</h5>
+                        </div>
+                        <br><br>
+
+                        <!-- Botões de navegação -->
+                        <div class="text-center">
+                            <a href="modulo03.html" class="btn btn-outline-success" role="button" aria-pressed="true">
+                                <i class="fa-solid fa-chevron-left"></i> Voltar </a>
+                            <a href="modulo01.html" class="btn btn-outline-success" role="button"
+                                aria-pressed="true">Realizar a Atividade Avaliativa <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+
+                        <footer>
+                            <hr>
+                            <div class="text-center">
+                                <p class="text">2023 EGPCE | Escola de Gestão Pública do Estado do Ceará</p>
+                                <img class="img-fluid" style="max-width: 200px;"
+                                    src="https://www.egp.ce.gov.br/wp-content/uploads/sites/8/2021/06/seplag-cinza.png"
+                                    alt="Logo Seplag">
+                            </div>
+                        </footer>
+
+                        <div id="progress-bar"></div>
+
+</body>
+
+</html>
